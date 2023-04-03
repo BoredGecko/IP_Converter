@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +24,18 @@ namespace IP_Conventer
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void GoTo_Pv4Info_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new IPv4Info();
+            window.Show();
+        }
+
+        private void GoToIPv6Info_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new IPv6Info();
+            window.Show();
         }
     }
 }
